@@ -9,11 +9,12 @@ def calculate_age(birth_date: date):
 
     age = today.year - birth_date.year
 
-    if (today.month, today.day) < (birth_date.month, birth_date.day):
+    if (
+            (today.month, today.day) < (birth_date.month, birth_date.day)):
         age -= 1
 
     return {
         "birth_date": birth_date,
         "age": age
-    }
+
     #تابخصاثبخهصابخصهابخصها
